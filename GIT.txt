@@ -1,0 +1,139 @@
+Useful 
+Git COMMANDS:
+------------------------------------------------------------------------------------------------------------------------
+git config --global user.name "username"
+git config --global user.email "email@example.com"
+git config --list
+git clone
+git --help
+git --version
+git add filename
+git add .
+git commit -m "any message"
+git commit -a -m "anymessage"
+git commit --amend -m "message related commit"
+git push
+git pull
+git log
+git status
+git init
+git remote -v
+git remote add anyname url_of_empty_repository
+git push origin master
+git branch branchname
+git checkout branchname
+git merge branchname1 branchname2 (master stl)master
+git rebase branchname1 branchname2
+git branch -m old_branch_name new_branch_name // branch rename
+git branch -d branchname1 //delete the merged branch
+git branch -d -r origin/branch_name origin/branch_name origin // to delete the remote branch
+git push origin --delete branchname  // delete the mranch from remote
+git diff
+git revert
+git revert --continue
+git reset
+git reset --hard  // can not able to reset bask
+git resetgit push origin master --force
+git log --graph --oneline --decorate
+git branch -a
+git checkout -b branchname origin/branchname
+git rm --cached "file name"
+git rm "filename"
+
+
+git tag
+git tag v0
+git push origin v0
+git checkout v1
+git push  --tags
+git tag -d v0
+git tag --delete v1
+git push origin -d v1
+git push origin --delete v1
+
+
+git stash 
+git stash list
+git stash apply
+git stash pop
+git stash drop
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+ANT COMMANDS
+
+ant clean
+ant
+ant compile
+------------------------------------------------------------------------------------------------------------------------
+MAVEN COMMANDS
+
+mvn clean
+mvn compile
+mvn verify
+mvn install
+mvn clean install
+mvn test
+------------------------------------------------------------------------------------------------------------------------
+GRADLE COMMANDS
+
+gradle clean
+gradle assemble
+gradle build
+
+------------------------------------------------------------------------------------------------------------------------
+Docker Commands
+
+docker info
+docker pull
+docker images
+docker run
+docker ps
+docker ps -a
+docker stop
+docker rm
+
+docker run <image>
+docker run --name=<customname> <image>
+docker run --rm <image>
+docker run --d <image>
+docker run --d -it <image>
+docker run --d -p 4000:4000
+
+
+Examples:
+
+docker pull alpine
+docker run alpine sh
+docker ps -a
+docker run -d  -it alpine sh
+docker run -it alpine sh
+
+ps
+
+docker run -it --name=MyLinux alpine sh
+docker ps -a
+docker stop MyLinux
+docker rm MyLinux
+
+
+docker pull microsoft/nanoserver
+
+docker run -it microsoft/nanoserver cmd
+
+docker run -it microsoft/nanoserver cmd /c echo "some message"
+
+
+docker network ls
+docker inspect nat
+
+docker inspect 
+
+docker pull microsoft/iis:nanoserver
+
+docker run -d microsoft/iis
+
+docker run -d -p 8000:8000 microsoft/iis:nanoserver
+
+docker ps -a
